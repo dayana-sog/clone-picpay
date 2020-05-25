@@ -55,7 +55,7 @@ function Activities () {
       </Header>
       <Card>
         <CardHeader>
-          <Avatar source={avatar} />
+          <Avatar source={avatar} resizeMode="contain" />
           <Description>
             <Bold>Você</Bold> pagou a <Bold>Herbert Dantas</Bold>
           </Description>
