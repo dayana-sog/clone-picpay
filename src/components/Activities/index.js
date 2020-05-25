@@ -25,7 +25,7 @@ import {
   OptionLabel
 } from './styles';
 
-import avatar from '../../assets/avatar.png';
+import avatar from '../../assets/dayana.png';
 
 function Activities () {
   const [isClick, setIsClick] = useState(false);
