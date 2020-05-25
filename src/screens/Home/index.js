@@ -11,6 +11,7 @@ import {
 } from './styles';
 
 import Suggestions from '../../components/Suggestions';
+import Activities from '../../components/Activities';
 
 function Home() {
   return (
@@ -28,6 +29,7 @@ function Home() {
         </Header>
 
         <Suggestions />
+        <Activities />
       </Container>
     </Wrapper>
   );
