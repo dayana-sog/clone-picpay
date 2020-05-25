@@ -13,6 +13,7 @@ import {
 import Suggestions from '../../components/Suggestions';
 import Activities from '../../components/Activities';
 import Tips from '../../components/Tips';
+import Banner from '../../components/Banner';
 
 function Home() {
   return (
@@ -32,6 +33,7 @@ function Home() {
         <Suggestions />
         <Activities />
         <Tips />
+        <Banner />
       </Container>
     </Wrapper>
   );

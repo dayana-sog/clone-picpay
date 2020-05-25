@@ -1,10 +1,27 @@
 import React from 'react';
-import { View } from 'react-native';
 
-// import { Container } from './styles';
+import { 
+  Container,
+  Details,
+  Img,
+  Title,
+  Description,
+} from './styles';
+
+import img13 from '../../assets/13.png';
 
 const Banner = () => {
-  return <View />;
+  return (
+    <Container>
+      <Details>
+        <Title>Cobre um amigo</Title>
+        <Description>
+          Mantenha suas parcerias em dia, use o PicPay para fazer suas cobranças
+        </Description>
+      </Details>
+      <Img source={img13} />
+    </Container>  
+  );
 }
 
 export default Banner;

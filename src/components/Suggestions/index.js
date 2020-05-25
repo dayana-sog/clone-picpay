@@ -63,7 +63,7 @@ const Suggestions = () => {
   return (
     <Container>
       {items.map((item) => (
-        <Option Key={item.key} >
+        <Option key={item.key} >
           <Img source={item.img} />
           <Label>{item.label}</Label>
         </Option>

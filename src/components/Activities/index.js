@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { TouchableWithoutFeedback } from 'react-native';
 import { Feather, MaterialCommunityIcons, AntDesign } from '@expo/vector-icons';
 
@@ -29,10 +29,13 @@ import avatar from '../../assets/dayana.png';
 
 function Activities () {
   const [isClick, setIsClick] = useState(false);
+  const [like, setLike] = useState(0);
+  const [message, setMessage] = useState(0);
 
   function handleClick() {
     setIsClick(!isClick);
   }
+
 
   return (
     <Container>
@@ -71,13 +74,13 @@ function Activities () {
           </Details>
 
           <Action>
-            <Options>
+            <Options onPress={() => setLike(like + 1)}>
               <MaterialCommunityIcons name="comment-outline" size={14} color="#fff" />
-              <OptionLabel>0</OptionLabel>
+              <OptionLabel>{like}</OptionLabel>
             </Options>
-            <Options>  
+            <Options onPress={() => setMessage(message + 1)}>  
               <AntDesign name="hearto" size={14} color="#fff" />
-              <OptionLabel>0</OptionLabel>
+              <OptionLabel>{message}</OptionLabel>
             </Options>
           </Action>
         </CardFooter>
